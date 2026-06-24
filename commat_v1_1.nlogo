@@ -225,9 +225,8 @@ end
 ; ---- LOADING FULL POP DATA WILL SLOW MODEL DOWN SIGNIFICANTLY, HERE 1,000 AGENTS ARE LOADED ----
 to load-population-data
   let raw csv:from-file "synthetic_population_1.csv"
-;  set population-data but-first raw ; remove header
   let full-population but-first raw
-  set population-data n-of 1000 full-population ; test
+  set population-data n-of 1000 full-population ; remove 'n-of ...' to set to full population
 end
 
 ; ---- Initialize household agent with synthetic data ----
