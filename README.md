@@ -7,7 +7,7 @@ Results generated with this model were published in the paper:
 The model includes two files:
 
 - `commat_v1.nlogo`: contains the model itself  
-- `synthetic population_1.csv`: contains the input data for the model  
+- `random_population.csv`: contains the input data for the model. this file contains random data was the agent attributes because the generated synthetic population cannot be provided for privacy reasons.  
 
 These two files should be in the same folder.
 
