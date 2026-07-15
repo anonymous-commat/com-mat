@@ -224,7 +224,7 @@ end
 
 ; ---- LOADING FULL POP DATA WILL SLOW MODEL DOWN SIGNIFICANTLY, HERE 1,000 AGENTS ARE LOADED ----
 to load-population-data
-  let raw csv:from-file "synthetic_population_1.csv"
+  let raw csv:from-file "random_population.csv" ; this file contains random data not based on the survey for privacy reasons
   let full-population but-first raw
   set population-data n-of 1000 full-population ; remove 'n-of ...' to set to full population
 end
